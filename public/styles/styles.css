@@ -1,0 +1,138 @@
+/* All Screens Start */
+
+:root{
+    --color-pink: #F4ABEF;
+    --color-dark-pink: #E360DE;
+    --color-blue:  #8CE0D8;
+    --color-dark-blue: #1C5DDD;
+    --color-roxo: #5925BA;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--color-dark-pink) !important;
+    opacity: 0.8 !important; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--color-dark-pink) !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--color-dark-pink) !important;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+}
+
+.screen-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-roxo);
+}
+
+.btn-site {
+    background-color: var(--color-roxo);
+    color: whitesmoke;
+    border-radius: 2rem;
+}
+
+.social-connect {
+    background-color: whitesmoke;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    font-size: 2rem;
+    border: 1px solid var(--color-roxo);
+}
+
+.fa-arrow-left {
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+.menu-icons {
+    color: var(--color-roxo);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-text {
+    color: var(--color-roxo);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.menu-space {
+    border-right: 1px solid var(--color-dark-pink);
+}
+
+.text-roxo {
+    font-size: 1rem;
+    color: var(--color-roxo);
+}
+
+.input-decoration {
+    border: 1px solid var(--color-roxo) !important;
+    border-radius: 1.25rem !important;
+    color: var(--color-dark-pink) !important;
+}
+
+body {
+    background-color: var(--color-blue);
+}
+
+/* All Screens End */
+
+/* Login start */
+
+.logo {
+    height: 30vh;
+}
+
+.fa-sign-in-alt {
+    color: var(--color-roxo);
+    font-size: 1rem;
+}
+
+.fa-key {
+    color: var(--color-roxo);
+    font-size: 1rem;
+}
+
+.social-connect img {
+    width: 1.5rem;
+}
+
+/* Login Ends */
+
+/* Sign-in Start */
+
+
+
+/* Sign-in End */
+
+/* Password Recovery Start */
+
+
+
+/* Password Recovery End */
+
+/* Home Start */
+
+.panel {
+    height: 25vh;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Home End */
