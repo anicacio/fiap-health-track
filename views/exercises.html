@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/public/styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>Health Track - Main</title>
+    <title>Health Track - Exercícios</title>
 </head>
 
 <body>
@@ -22,19 +22,146 @@
     <main>
         <div class="container">
             <div>
-                <div class="row justify-content-center">
-                    <span class="screen-title my-3">Health Track</span>
+                <div class="row screen-title-control">
+                    <span class="screen-title my-3">Lista de Exercícios</span>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <table class="table table-borderless table-sm">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"><i class="far fa-calendar"></i></th>
+                        <th scope="col"><i class="fas fa-map-marker-alt"></i></th>
+                        <th scope="col"><i class="fas fa-stopwatch"></i></th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td class="td-control"><i class="fas fa-walking"></i></td>
+                        <td>24/05/2020</td>
+                        <td>2 km</td>
+                        <td>1h</td>
+                        <td class="td-control"><i class="fas fa-pen"></i><i class="fas fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td class="td-control"><i class="fas fa-walking"></i></td>
+                        <td>24/05/2020</td>
+                        <td>2 km</td>
+                        <td>1h</td>
+                        <td class="td-control"><i class="fas fa-pen"></i><i class="fas fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td class="td-control"><i class="fas fa-walking"></i></td>
+                        <td>24/05/2020</td>
+                        <td>2 km</td>
+                        <td>1h</td>
+                        <td class="td-control"><i class="fas fa-pen"></i><i class="fas fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td class="td-control"><i class="fas fa-walking"></i></td>
+                        <td>24/05/2020</td>
+                        <td>2 km</td>
+                        <td>1h</td>
+                        <td class="td-control"><i class="fas fa-pen"></i><i class="fas fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td class="td-control"><i class="fas fa-walking"></i></td>
+                        <td>24/05/2020</td>
+                        <td>2 km</td>
+                        <td>1h</td>
+                        <td class="td-control"><i class="fas fa-pen"></i><i class="fas fa-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Adicionar exercício</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row my-1 justify-content-around input-decoration">
+                                <div>
+                                    <label for="run"><i class="fas fa-running"></i></label>
+                                    <input type="radio" name="exercise-type" id="run" class="d-none">
+                                </div>
+                                <div>
+                                    <label for="run"><i class="fas fa-walking"></i></label>
+                                    <input type="radio" name="exercise-type" id="run" class="d-none">
+                                </div>
+                                <div>
+                                    <label for="run"><i class="fas fa-bicycle"></i></label>
+                                    <input type="radio" name="exercise-type" id="run" class="d-none">
+                                </div>
+                                <div>
+                                    <label for="run"><i class="fas fa-swimmer"></i></label>
+                                    <input type="radio" name="exercise-type" id="run" class="d-none">
+                                </div>
+                                <div>
+                                    <label for="run"><i class="fas fa-dumbbell"></i></label>
+                                    <input type="radio" name="exercise-type" id="run" class="d-none">
+                                </div>
+
+                            </div>
+                            <div class="row justify-content-center">
+                                <input class="form-control input-decoration my-1" type="date" id="input-user"
+                                    placeholder="Data">
+                            </div>
+                            <div class="row justify-content-center">
+                                <input class="form-control input-decoration my-1" type="text" id="input-user"
+                                    placeholder="Distância">
+                            </div>
+                            <div class="row justify-content-center">
+                                <input class="form-control input-decoration my-1" type="text" id="input-user"
+                                    placeholder="Tempo">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-site btn-modal" data-dismiss="modal"><i
+                                class="fas fa-times"></i></button>
+                        <button type="button" class="btn btn-site btn-modal" data-dismiss="modal"><i
+                                class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-end fixed-bottom">
+            <a href="#" class="plus" data-toggle="modal" data-target="#staticBackdrop">
+                <i class="fas fa-plus"></i>
+            </a>
+        </div>
+
         <nav class="navbar navbar-expand-lg fixed-bottom py-0">
             <div class="d-flex align-items-center justify-content-around container">
                 <a class="navbar-brand my-0 py-0" href="home.html">
                     <i class="fas fa-home menu-icons"></i>
-                    <p class="menu-text">Home</p>
+                    <p class="menu-text">Início</p>
                 </a>
                 <a class="navbar-brand my-0 py-0" href="exercises.html">
-                    <i class="d-flex fas fa-running menu-icons"></i>
+                    <i class="fas fa-running menu-icons"></i>
                     <p class="menu-text">Exercícios</p>
                 </a>
                 <a class="navbar-brand my-0 py-0" href="weigth.html">
@@ -42,11 +169,11 @@
                     <p class="menu-text">Pesos</p>
                 </a>
                 <a class="navbar-brand my-0 py-0" href="profile.html">
-                    <i class="fas fa-user-circle menu-icons"></i>
+                    <i class="fas fa-user-alt menu-icons"></i>
                     <p class="menu-text">Perfil</p>
                 </a>
             </div>
-          </nav>
+        </nav>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

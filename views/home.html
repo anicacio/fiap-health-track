@@ -13,8 +13,10 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="/public/styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
+        integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" />
 
-    <title>Health Track - Main</title>
+    <title>Health Track - Inicio</title>
 </head>
 
 <body>
@@ -22,21 +24,55 @@
     <main>
         <div class="container">
             <div>
-                <div class="row justify-content-center">
+                <div class="row screen-title-control">
                     <span class="screen-title my-3">Health Track</span>
                 </div>
                 <div>
                     <div class="container panel">
-
+                        <div class="panel-header">
+                            Metas
+                        </div>
                     </div>
                 </div>
-                <div class="d-block container mt-3">
+                <div class="d-block container mt-2">
                     <div class="row justify-content-between">
-                        <div class="col mr-2 panel">
-    
+                        <div class="col mr-1 panel">
+                            <div class="panel-header">
+                                Exercícios
+                            </div>
+                            <div class="panel-body">
+                                <i class="panel-icons fas fa-running"></i>
+                            </div>
+                            <div>
+                                <div class="panel-footer">
+                                    <div>
+                                        <span class="highlight">2.5 km</span>
+                                    </div>
+                                    <div>
+                                        <span>25/05</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col panel">
-    
+                        <div class="col ml-1 panel">
+                            <div class="panel-header">
+                                Pesos
+                            </div>
+                            <div class="panel-body">
+                                <div class="canvas">
+                                    <canvas id="weightChart" width="130" height="75"></canvas>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="panel-footer">
+                                    <div>
+                                        <span class="highlight">76 kg</span>
+                                    </div>
+                                    <div>
+                                        <span>25/05</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -46,10 +82,10 @@
             <div class="d-flex align-items-center justify-content-around container">
                 <a class="navbar-brand my-0 py-0" href="home.html">
                     <i class="fas fa-home menu-icons"></i>
-                    <p class="menu-text">Home</p>
+                    <p class="menu-text">Início</p>
                 </a>
                 <a class="navbar-brand my-0 py-0" href="exercises.html">
-                    <i class="d-flex fas fa-running menu-icons"></i>
+                    <i class="fas fa-running menu-icons"></i>
                     <p class="menu-text">Exercícios</p>
                 </a>
                 <a class="navbar-brand my-0 py-0" href="weigth.html">
@@ -57,13 +93,15 @@
                     <p class="menu-text">Pesos</p>
                 </a>
                 <a class="navbar-brand my-0 py-0" href="profile.html">
-                    <i class="fas fa-user-circle menu-icons"></i>
+                    <i class="fas fa-user-alt menu-icons"></i>
                     <p class="menu-text">Perfil</p>
                 </a>
             </div>
-          </nav>
+        </nav>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+    <script src="/public/js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
